@@ -129,7 +129,7 @@ body {
 
 .third-menu {
     position: absolute;
-    right: 180px;
+    right: 100%;
     top: 0;
     display: none;
     font-family: 'Open Sans SemiCondensed';
@@ -141,7 +141,7 @@ body {
     width: 100%;
 }
 
-.second-menu li:last-child:hover {
+.second-menu li:last-child:hover ul {
     display: block;
 }
 
