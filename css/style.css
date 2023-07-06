@@ -1,0 +1,657 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans SemiCondensed';
+    src: url('OpenSansSemiCondensed-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: top;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-size: 18px;
+    color: #161616;
+    background: #9c3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+    background: #909;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.header-menu {
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header-menu li {
+    background: #3c6;
+    position: relative;
+}
+
+.header-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #161616;
+    text-transform: uppercase;
+    padding: 10px 25px;
+}
+
+.header-menu li:hover .second-menu {
+    display: block;
+}
+
+.second-menu {
+    display: none;
+    padding-top: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.second-menu li {
+    background: gold;
+}
+
+.third-menu {
+    position: absolute;
+    right: 180px;
+    top: 0;
+    display: none;
+    font-family: 'Open Sans SemiCondensed';
+    font-weight: 400;
+}
+
+.third-menu li {
+    background: red;
+    width: 100%;
+}
+
+.second-menu li:last-child:hover {
+    display: block;
+}
+
+/* GALLERY .......................... */
+
+.containerr {
+    max-width: 630px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background:#85D7FF;
+}
+.city {
+    max-width: 600px;
+    outline: 2px solid brown;
+    margin-bottom: 15px;
+    padding: 0 100px;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 60px 0;
+}
+
+.menu {
+    background:burlywood;
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    margin-top: -95px;
+    text-align: center;
+}
+
+.list-menu li:hover {
+    background:#161616;
+}
+
+.list-menu li {
+    border:1px solid crimson;
+}
+
+.list-menu li > a {
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+.hiden {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 220px;
+    overflow: hidden;
+    text-align: justify;
+    padding: 10px;
+    margin-top: -110px;
+    color: #fff;
+    background: rgba(0, 0, 0, .7)
+}
+.city:hover .hiden {
+    display: block;
+}
+
+.footer {
+    background: #85D7FF;
+    padding: 25px 0;
+} 
+
+
+/* FLEX CSS .............................. */
+
+
+.box {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.bg-aqua {
+    background: aqua;
+}
+.bg-green {
+    background: greenyellow;
+}
+.bg-dark {
+    background: darkorange;
+}
+.outline {
+    outline: 2px solid red;
+}
+.fz-0 {
+    font-size: 0px;
+}
+.fz-20 {
+    font-size: 20px;
+}
+.w-400 {
+    width: 400px;
+}
+.w-800 {
+    width: 800px;
+}
+.h-100 {
+    height: 100px;
+}
+.h-133 {
+    height: 133.33px;
+}
+.h-200 {
+    height: 200px;
+}
+.h-400 {
+    height: 400px;
+}
+
+/* one class for flex project ....... */
+
+.flexx {
+    display: flex;
+}
+
+/* two classes for float project ...... */
+
+.floattt {
+    float: left;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: '.'
+}
+
+/* one class for inline-block project .... */
+
+.inline-block {
+    display: inline-block;
+}
+
+
+/* FLOAT ................................ */
+/*
+.box {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+.bg-aqua {
+    background: aqua;
+}
+.bg-green {
+    background: greenyellow;
+}
+.bg-dark {
+    background: darkorange;
+}
+.outline {
+    outline: 2px solid red;
+}
+.fz-0 {
+    font-size: 0px;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.w-400 {
+    width: 400px;
+}
+
+.w-800 {
+    width: 800px;
+}
+
+.h-100 {
+    height: 100px;
+}
+.h-133 {
+    height: 133.33px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.h-400 {
+    height: 400px;
+}
+
+.floattt {
+    float: left;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: '.'
+}
+
+/* INLINE-BLOCK */
+/*
+
+.inline-block {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+/*
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    color: #161616;
+    background: #D8D8D6;
+    height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.header {
+    background: #81A36B;
+    padding: 25px 0;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.header a {
+    color:#161616;
+    text-decoration: none;
+    line-height: 30px;
+    display: block;
+}
+
+.header-logo {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+    gap: 90px;
+}
+*/
+/* 2 fonts for short code*/ 
+/*
+.roboto {
+    color: #161616;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserat {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* main section */
+/*
+.section-one {
+    display: flex;
+    align-items: center; 
+    gap: 30px;
+    margin-bottom: 120px;
+}
+
+
+.title {
+    color: #161616;
+    text-align: left;
+    font-size: 62px;
+    line-height: normal;
+}
+
+
+.section-one-p {
+    margin-top: 60px;
+    line-height: 164%;
+}
+
+.btn {
+    margin-top: 40px;
+}
+
+.btn-one {
+    background: #81A36B;
+    width: 190px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-two {
+    border: 1px solid #81A36B;
+    width: 190px;
+    height: 60px;
+    margin-left: 65px;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* about us */ 
+/*
+.about-us {
+    max-width: 540px;
+    text-align: center;
+}
+
+.title-h2 {
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.about-us-p {
+    color: #161616;
+    text-align: center;
+    line-height: 164%;
+}
+
+/*ADVANTEGES*/
+/*
+.advanteges {
+    background: #81A36B;
+    padding: 80px 0;
+    margin-top: 120px;
+}
+
+.list-advanteges {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-items {
+    text-align: center;
+}
+
+.list-items p {
+    margin-top: 20px;
+    color: #161616;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* How we work*/
+/*
+.we-work {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.title-h3 {
+    text-align: center;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.we-work-p {
+    line-height: 164%;
+    margin-top: 60px;
+}
+
+
+/*  OUR WORKS */
+/*
+.our-work {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.our-work-h3 {
+    color: #161616;
+    text-align: center;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.card-works {
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card-works li {
+    flex: 1 1 30%;
+    background: #81A36B;
+    padding: 15px 15px;
+}
+
+.our-works-img {
+    width: 100%;
+    height: 402px;
+}
+
+.our-work-p {
+    text-align: center;
+    line-height: 164%;
+    margin-top: 23px;
+}
+
+/* FOOTER */
+/*
+.footer {
+    background: #81A36B;
+    height: 390px;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.footer-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.footer-padding {
+    padding-top: 60px;
+}
+
+.contacts {
+    color: #161616;
+    font-size: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    margin-bottom: 40px;
+}
+
+.tel {
+    line-height: 164%;
+    text-decoration: none;
+}
+
+.phone {
+    margin-bottom: 20px;
+}
+
+.footer-center {
+}
+
+.footer-center-p {
+    font-size: 36px;
+}
+
+.numders {
+    color: #161616;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.icons-p {
+    color: #161616;
+    font-size: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164%;
+    margin: 0 0 20px;
+}
+
+.list-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-container > div {
+    flex-basis: 200px;
+}*/
