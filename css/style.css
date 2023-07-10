@@ -71,12 +71,46 @@ table {
 	border-spacing: 0;
 }
 
+html {
+    height: 100%;
+}
 body {
     font-size: 18px;
     color: #161616;
     background: #9c3;
+    height: 100%;
 }
 
+.hiden {
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: #909;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.for-icons-left {
+    display: flex;
+    align-items: center;
+}
+
+.for-icons-right {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    flex: 1 1 auto;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -215,6 +249,10 @@ body {
     padding: 25px 0;
 } 
 
+.yellow {
+    display: flex;
+    justify-content: center;
+}
 
 /* FLEX CSS .............................. */
 
@@ -280,74 +318,6 @@ body {
 }
 
 /* one class for inline-block project .... */
-
-.inline-block {
-    display: inline-block;
-}
-
-
-/* FLOAT ................................ */
-/*
-.box {
-    width: 1200px;
-    margin: 20px auto;
-}
-
-.bg-aqua {
-    background: aqua;
-}
-.bg-green {
-    background: greenyellow;
-}
-.bg-dark {
-    background: darkorange;
-}
-.outline {
-    outline: 2px solid red;
-}
-.fz-0 {
-    font-size: 0px;
-}
-
-.fz-20 {
-    font-size: 20px;
-}
-
-.w-400 {
-    width: 400px;
-}
-
-.w-800 {
-    width: 800px;
-}
-
-.h-100 {
-    height: 100px;
-}
-.h-133 {
-    height: 133.33px;
-}
-
-.h-200 {
-    height: 200px;
-}
-
-.h-400 {
-    height: 400px;
-}
-
-.floattt {
-    float: left;
-}
-
-.clearfix::after {
-    display: block;
-    clear: both;
-    content: '.'
-}
-
-/* INLINE-BLOCK */
-/*
 
 .inline-block {
     display: inline-block;

@@ -8,37 +8,76 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <ul class="header-menu">
-                <li>
-                    <a href="index.html">Home page</a>
-                </li>
-                <li>
-                    <a href="gallery.html">gallery</a>
-                </li>
-                <li>
-                    <a href="#">home works</a>
-                    <ul class="second-menu">
-                        <li>
-                            <a href="inline-block.html">inline-block</a>
-                        </li>
-                        <li>
-                            <a href="float.html">float</a>
-                        </li>
-                        <li>
-                            <a href="#">blocks</a>
-                            <ul class="third-menu">
-                                <li>
-                                    <a href="flex.html">flex</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <ul class="header-menu">
+                    <li class="for-icons-left">
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#main"></use>
+                            </svg>
+                        </a>
+                        <a href="index.html">Home page</a>
+                    </li>
+                    <li class="for-icons-left">
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#twit"></use>
+                            </svg>
+                        </a>
+                        <a href="gallery.html">gallery</a>
+                    </li>
+                    <li class="for-icons-right">
+                        <a href="#">home works</a>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="images/sprite.svg#insta"></use>
+                            </svg>
+                        </a>
+                        <ul class="second-menu">
+                            <li>
+                                <a href="inline-block.html">inline-block</a>
+                            </li>
+                            <li>
+                                <a href="float.html">float</a>
+                            </li>
+                            <li class="for-icons-right">
+                                <a href="#">blocks</a>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="images/sprite.svg#cursor"></use>
+                                    </svg>
+                                </a>
+                                <ul class="third-menu">
+                                    <li>
+                                        <a href="flex.html">flex</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="main"></div>
+        <footer class="footer">
+            <div class="yellow container">
+                <svg class="icon">
+                    <use href="images/sprite.svg#telegram"></use>
+                </svg>
+                <svg class="icon">
+                    <use href="images/sprite.svg#viber"></use>
+                </svg>
+                <svg class="icon">
+                    <use href="images/sprite.svg#fb"></use>
+                </svg>
+                <svg class="icon">
+                    <use href="images/sprite.svg#google"></use>
+                </svg>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
 
