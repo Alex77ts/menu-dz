@@ -144,26 +144,28 @@ body {
 }
 
 .header-menu li:hover .second-menu {
-    display: block;
+    /*display: block;*/
+    top: 100%;
 }
 
 .second-menu {
-    display: none;
+    /*display: none;*/
     padding-top: 20px;
     position: absolute;
-    top: 100%;
+    top: -1000%;
     left: 0;
     font-family: 'Montserrat';
     font-weight: 400;
+    transition: top 1s linear;
 }
 
 .second-menu li {
     background: gold;
 }
-
+/* для third-menu изменения */
 .third-menu {
     position: absolute;
-    right: 100%;
+    right: -100%;
     top: 0;
     display: none;
     font-family: 'Open Sans SemiCondensed';
@@ -174,9 +176,10 @@ body {
     background: red;
     width: 100%;
 }
-
+/* и тут изменения для third-menu */
 .second-menu li:last-child:hover ul {
-    display: block;
+    /*display: block;*/
+    right: 100%;
 }
 
 /* GALLERY .......................... */
@@ -322,306 +325,3 @@ body {
 .inline-block {
     display: inline-block;
 }
-
-
-
-
-
-
-
-
-/*
-html {
-    height: 100%;
-}
-
-body {
-    font-size: 18px;
-    color: #161616;
-    background: #D8D8D6;
-    height: 100%;
-}
-
-main {
-    flex: 1;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.header {
-    background: #81A36B;
-    padding: 25px 0;
-}
-
-.container {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 5px;
-}
-
-.header a {
-    color:#161616;
-    text-decoration: none;
-    line-height: 30px;
-    display: block;
-}
-
-.header-logo {
-    text-transform: uppercase;
-    font-size: 36px;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-list {
-    display: flex;
-    gap: 90px;
-}
-*/
-/* 2 fonts for short code*/ 
-/*
-.roboto {
-    color: #161616;
-    font-family: 'Roboto';
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.montserat {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-/* main section */
-/*
-.section-one {
-    display: flex;
-    align-items: center; 
-    gap: 30px;
-    margin-bottom: 120px;
-}
-
-
-.title {
-    color: #161616;
-    text-align: left;
-    font-size: 62px;
-    line-height: normal;
-}
-
-
-.section-one-p {
-    margin-top: 60px;
-    line-height: 164%;
-}
-
-.btn {
-    margin-top: 40px;
-}
-
-.btn-one {
-    background: #81A36B;
-    width: 190px;
-    height: 60px;
-    cursor: pointer;
-    border: none;
-}
-
-.btn-two {
-    border: 1px solid #81A36B;
-    width: 190px;
-    height: 60px;
-    margin-left: 65px;
-    cursor: pointer;
-    background: transparent;
-}
-
-/* about us */ 
-/*
-.about-us {
-    max-width: 540px;
-    text-align: center;
-}
-
-.title-h2 {
-    color: #000;
-    font-size: 32px;
-    margin-bottom: 60px;
-}
-
-.about-us-p {
-    color: #161616;
-    text-align: center;
-    line-height: 164%;
-}
-
-/*ADVANTEGES*/
-/*
-.advanteges {
-    background: #81A36B;
-    padding: 80px 0;
-    margin-top: 120px;
-}
-
-.list-advanteges {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.list-items {
-    text-align: center;
-}
-
-.list-items p {
-    margin-top: 20px;
-    color: #161616;
-    font-size: 18px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-/* How we work*/
-/*
-.we-work {
-    margin-top: 120px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.title-h3 {
-    text-align: center;
-    font-size: 32px;
-    line-height: normal;
-}
-
-.we-work-p {
-    line-height: 164%;
-    margin-top: 60px;
-}
-
-
-/*  OUR WORKS */
-/*
-.our-work {
-    margin-top: 120px;
-    margin-bottom: 120px;
-}
-
-.our-work-h3 {
-    color: #161616;
-    text-align: center;
-    font-size: 32px;
-    line-height: normal;
-}
-
-.card-works {
-    display: flex;
-    gap: 30px;
-    margin-top: 80px;
-}
-
-.card-works li {
-    flex: 1 1 30%;
-    background: #81A36B;
-    padding: 15px 15px;
-}
-
-.our-works-img {
-    width: 100%;
-    height: 402px;
-}
-
-.our-work-p {
-    text-align: center;
-    line-height: 164%;
-    margin-top: 23px;
-}
-
-/* FOOTER */
-/*
-.footer {
-    background: #81A36B;
-    height: 390px;
-    text-align: center;
-    padding: 25px 0;
-}
-
-.footer-container {
-    display: flex;
-    text-align: left;
-    justify-content: space-between;
-}
-
-.footer-padding {
-    padding-top: 60px;
-}
-
-.contacts {
-    color: #161616;
-    font-size: 24px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 164%;
-    margin-bottom: 40px;
-}
-
-.tel {
-    line-height: 164%;
-    text-decoration: none;
-}
-
-.phone {
-    margin-bottom: 20px;
-}
-
-.footer-center {
-}
-
-.footer-center-p {
-    font-size: 36px;
-}
-
-.numders {
-    color: #161616;
-    font-size: 16px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.icons-p {
-    color: #161616;
-    font-size: 24px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 164%;
-    margin: 0 0 20px;
-}
-
-.list-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.footer-container > div {
-    flex-basis: 200px;
-}*/
