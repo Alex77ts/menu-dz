@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Open Sans SemiCondensed';
-    src: url('OpenSansSemiCondensed-Regular.woff2') format('woff2');
+    src: url('../fonts/OpenSansSemiCondensed-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -98,6 +98,7 @@ body {
     flex-direction: column;
 }
 
+/* Максим ты сказал убрать здесь флексы , я их закоментил и у меня сразу увеличились зеленые блоки в хедере. я закоментировал for-icons-left and for-icons-right */
 .for-icons-left {
     display: flex;
     align-items: center;
@@ -135,12 +136,29 @@ body {
     position: relative;
 }
 
+.header-menu > li:last-child > a {
+    padding: 10px 40px 10px 25px;
+}
+
+.header-menu > li:last-child > a > svg {
+    left: auto;
+    right: 4px;
+}
+
 .header-menu li a {
     display: block;
     text-decoration: none;
     color: #161616;
     text-transform: uppercase;
-    padding: 10px 25px;
+    padding: 10px 25px 10px 40px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.header-menu > li a svg {
+    position: absolute;
+    top: 4px;
+    left: 4px;
 }
 
 .header-menu li:hover .second-menu {
@@ -153,11 +171,12 @@ body {
     padding-top: 20px;
     position: absolute;
     top: -1000%;
-    left: 0;
+    right: 0;
     font-family: 'Montserrat';
     font-weight: 400;
-    transition: top 1s linear;
+    transition: top .1s linear;
 }
+
 
 .second-menu li {
     background: gold;
@@ -165,11 +184,11 @@ body {
 /* для third-menu изменения */
 .third-menu {
     position: absolute;
-    right: -100%;
-    top: 0;
-    display: none;
+    right: 100%;
+    top: -1000%;
     font-family: 'Open Sans SemiCondensed';
     font-weight: 400;
+    transition: top .4s linear;
 }
 
 .third-menu li {
@@ -179,7 +198,7 @@ body {
 /* и тут изменения для third-menu */
 .second-menu li:last-child:hover ul {
     /*display: block;*/
-    right: 100%;
+    top: 100%;
 }
 
 /* GALLERY .......................... */
