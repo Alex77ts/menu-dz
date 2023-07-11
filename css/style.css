@@ -99,7 +99,7 @@ body {
 }
 
 /* Максим ты сказал убрать здесь флексы , я их закоментил и у меня сразу увеличились зеленые блоки в хедере. я закоментировал for-icons-left and for-icons-right */
-.for-icons-left {
+/*.for-icons-left {
     display: flex;
     align-items: center;
 }
@@ -107,7 +107,7 @@ body {
 .for-icons-right {
     display: flex;
     align-items: center;
-}
+}*/
 
 .main {
     flex: 1 1 auto;
@@ -198,7 +198,7 @@ body {
 /* и тут изменения для third-menu */
 .second-menu li:last-child:hover ul {
     /*display: block;*/
-    top: 100%;
+    top: 0;
 }
 
 /* GALLERY .......................... */
