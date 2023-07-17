@@ -207,10 +207,15 @@ body {
 
 
 aside ul li a {
-    text-decoration: solid 1px black;
+    text-decoration: none;
     color:#161616;
     cursor: pointer;
     font-size: 30px;
+}
+
+aside ul li a:hover {
+    background: #f73; 
+    color: yellow;
 }
 
 .l1 {
